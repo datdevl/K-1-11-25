@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Dashboard</title>
+  <style>
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background: #333;
+      display: flex;
+    }
+    li {
+      padding: 15px 25px;
+    }
+    li a {
+      color: white;
+      text-decoration: none; /* bỏ gạch chân */
+      font-weight: bold;
+    }
+
+    .info {
+      background: #e6f9ff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      display: inline-block;
+      width: 180px;
+      text-align: center; /* canh giữa chữ */
+      padding: 30px;
+      margin: 20px;
+      font-size: 18px;
+    }
+
+    /*Bảng*/
+    table {
+      border-collapse: collapse; /* thay viền là 1 đư */
+      margin: 20px auto ;
+      width: 80%;
+      text-align: center;
+      background: white;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    th {
+      background: #3cb043;
+      color: white;
+    }
+    
+    .tb {
+      position: absolute;
+      top: 120px;
+      right: 80px;
+      width: 160px;
+      background: yellow;
+      border: 2px solid gray; 
+      text-align: center;
+      padding: 10px;
+      z-index: 2; /* ưu tiên hiển thị trên sp */
+    }
+
+    .sp {
+      position: absolute;
+      top: 160px;  /* sát với khung tb */
+      right: 80px;
+      width: 120px;
+      background: lightblue;
+      border: 2px solid gray;
+      text-align: center;
+      padding: 30px;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- thanh nav -->
+  <ul>
+    <li><a href="">Trang chủ</a></li>
+    <li><a href="">Bảng điểm</a></li>
+    <li><a href="">Liên hệ</a></li>
+  </ul>
+
+  <div class="info">Sĩ số: 40</div>
+  <div class="info">Điểm cao: 9.5</div>
+  <div class="info">TB: 7.2</div>
+
+  <!-- Bảng -->
+  <table>
+    <tr>
+      <th>Họ tên</th>
+      <th>Toán</th>
+      <th>Văn</th>
+      <th>Anh</th>
+    </tr>
+    <tr>
+      <td>Nguyễn An</td>
+      <td>9</td>
+      <td>8</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Trần Bình</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Lê Cường</td>
+      <td>8</td>
+      <td>9</td>
+      <td>9</td>
+    </tr>
+  </table>
+
+  <!-- khối tb-sp -->
+  <div class="tb">Thông báo</div>
+  <div class="sp">Hỗ trợ</div>
+
+</body>
+</html>
